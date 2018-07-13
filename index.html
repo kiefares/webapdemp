@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Front Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+
+</head>
+<body>
+
+<div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top custom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="FrontPage(Anon).html">PictureShare</a>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+           <li><form class="navbar-form"><div class="form-group"><input type="text" id="input" class="form-control" placeholder="Search" onkeyup="search()"></div></form></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tags
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#" onclick="searchtag('Funny')">Funny</a></li>
+                <li><a href="#" onclick="searchtag('Anime')">Anime</a></li>
+                <li><a href="#" onclick="searchtag('Games')">Games</a></li>
+            </ul>
+      </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="" data-toggle="modal" data-target="#SignModal">Signup</a></li>
+                <li><a href="" data-toggle="modal" data-target="#loginModal">Login </a></li>
+                
+
+            </ul> 
+        </div>
+    </div>
+</nav>
+    
+    
+    <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+        
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <table>
+                  <tr>
+                      <td><label>Username: </label></td>
+                      <td><input type = "text"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td><label>Password: </label></td>
+                      <td><input type = "password"></td>
+                  </tr>
+                  
+                  
+                  
+              </table> 
+            </form>
+        </div>
+        <div class="modal-footer">
+
+          <span class="label label-default"><a href="FrontPage.html" class="ent">Enter</a></span> 
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+ <div class="modal fade" id="SignModal" role="dialog">
+    <div class="modal-dialog">
+        
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <table>
+                  <tr>
+                      <td><label>Username: </label></td>
+                      <td><input type = "text"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td><label>E-mail: </label></td>
+                      <td><input type = "text"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td><label>Password: </label></td>
+                      <td><input type = "password"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td><label>Re-enter Password: </label></td>
+                      <td><input type = "password"></td>
+                  </tr>
+                  
+                  
+                  
+              </table> 
+            </form>
+        </div>
+        <div class="modal-footer">
+
+          <span class="label label-default"><a href="FrontPage.html" class="ent">Enter</a></span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+      
+      
+    <div class="col-sm-9 sidenav">
+
+    <div class="container adjust" >
+  
+        
+        <ul id="posts">
+                        
+                        
+                        
+                       
+                    <li>
+                    <div>
+                    <h2>Front Page</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by ReAdMe,  July 10, 2018</h5>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <a href="#" data-toggle="modal" data-target="#myModal">
+                                <img src="FRONTPAGE.png" class="img-responsive" alt="FRONT PAGE" id="myImg1">
+                            </a> 
+                        <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                          <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                          <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        <div class="col-md-5"> 
+                            <h5>
+                                
+                                <span class="label label-primary" id="Funny"><a href="#" class="tag">Funny</a></span>
+                                
+                            </h5>
+                            <p>DRAFT FRONT PAGE FOR WEBAPDE MP!!!</p>
+                            <a href="" data-toggle="modal" class="commentFont" data-target="#Comment1Modal">Comments</a>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div>
+                    <h2>How Lewd</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by ReAdMe,  July 10, 2018</h5>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <a href="#" data-toggle="modal" data-target="#myModal">
+                                <img src="how%20lewd.png" class="img-responsive" alt="How Lewd" id="myImg2"> 
+                            </a>
+                        <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                          <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                          <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-5"> 
+                            <h5><span class="label label-success"><a href="#" class="tag">Anime</a></span></h5>
+                            <p>Kaguya Sama reaction face by Kaguya.</p>
+                            <a href="" data-toggle="modal" class="commentFont" data-target="#Comment2Modal">Comments</a>
+
+                        </div>
+                    </div>
+                        
+                    </div>
+                    </li>
+
+
+                    <li>
+                    <div>
+                    <h2>Salty af rolls</h2>
+                    <h5><span class="glyphicon glyphicon-time"></span> Post by GBFarmer,  July 10, 2018</h5>
+                    <div class="row">
+                        <div class="col-md-7">
+
+                            <a href="#" data-toggle="modal" data-target="#myModal">
+                                <img src="my%20fav.PNG" class="img-responsive" alt="Salty af rolls" id="myImg3"> 
+                            </a>
+                        <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                          <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                          <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5"> 
+                            <h5>
+                                
+                                <span class="label label-info"><a href="#" class="tag">Games</a></span>
+                                <span class="label label-success"><a href="#" class="tag">Anime</a></span> 
+                            </h5>
+                            <p>A normal day in the life of a high roller.</p>
+                            <a href="" data-toggle="modal" class="commentFont" data-target="#Comment3Modal">Comments</a>
+                        </div>
+                    </div>
+                    </div>
+                    </li>
+                    
+                     
+                    
+                    </ul>
+        
+        
+        <div class="modal fade" id="Comment1Modal" role="dialog">
+    <div class="modal-dialog">
+        
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Comments</h4>
+        </div>
+        <div class="modal-body">
+           <a href="about2.html">User_1</a>: WEBAPDE MP?
+            <br>
+            <a href="">KaguyaSamaAnimePls</a>: Yes
+            <br>
+            <a href="">CantSleep</a>: I'm still awake.
+            <br>
+            <a href="">ThatsEnough</a>: Stop.
+            <br>
+            <a href="">TheQuestion</a>: How long can this go?
+            <br>
+            
+            
+        </div>
+
+        </div>
+      </div>
+        
+      
+    </div>
+  </div>           
+        
+        
+        
+        <div class="modal fade" id="Comment2Modal" role="dialog">
+    <div class="modal-dialog">
+        
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Comments</h4>
+        </div>
+        <div class="modal-body">
+           <a href="about2.html">User_1</a>: What is this?
+            <br>
+            <a href="">KaguyaSamaAnimePls</a>: The best.
+            <br>
+            <a href="">SauceMeUp</a>: Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen
+            <br>
+            <a href="">HeyHeyHey</a>: Whats up my!!!!!
+            <br>
+            <a href="">ThatsEnough</a>: Stop.
+            <br>
+            <a href="">TheQuestion</a>: How long can this go?
+            <br>
+            
+            
+        </div>
+        
+      </div>
+        
+      
+    </div>
+  </div>
+        
+            <div class="modal fade" id="Comment3Modal" role="dialog">
+    <div class="modal-dialog">
+        
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Comments</h4>
+        </div>
+        <div class="modal-body">
+           <a href="about2.html">User_1</a>: What is this?
+            <br>
+            <a href="">GBFGoldBarPls</a>: The best.
+            <br>
+            <a href="">SauceMeUp</a>: GranblueFantasy
+            <br>
+            <a href="">HeyHeyHey</a>: Whats up my!!!!!
+            <br>
+            <a href="">ThatsEnough</a>: Stop.
+            <br>
+            <a href="">TheQuestion</a>: How long can this go?
+            <br>
+            <span id="result"></span>
+            
+            
+        </div>
+       
+      </div>
+        
+      
+    </div>
+  </div>
+        
+        
+    </div>
+</div>
+
+  
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+    
+    function noPreview() {
+  $('#image-preview-div').css("display", "none");
+  $('#preview-img').attr('src', 'noimage');
+  $('upload-button').attr('disabled', '');
+}
+
+function selectImage(e) {
+  $('#file').css("color", "green");
+  $('#image-preview-div').css("display", "block");
+  $('#preview-img').attr('src', e.target.result);
+  $('#preview-img').css('max-width', '550px');
+}
+
+$(document).ready(function (e) {
+
+  var maxsize = 500 * 1024; // 500 KB
+
+  $('#max-size').html((maxsize/1024).toFixed(2));
+
+  $('#upload-image-form').on('submit', function(e) {
+
+    e.preventDefault();
+
+    $('#message').empty();
+    $('#loading').show();
+
+    $.ajax({
+      url: "upload-image.php",
+      type: "POST",
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(data)
+      {
+        $('#loading').hide();
+        $('#message').html(data);
+      }
+    });
+
+  });
+
+  $('#file').change(function() {
+
+    $('#message').empty();
+
+    var file = this.files[0];
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+
+    if ( !( (file.type == match[0]) || (file.type == match[1]) || (file.type == match[2]) ) )
+    {
+      noPreview();
+
+      $('#message').html('<div class="alert alert-warning" role="alert">Unvalid image format. Allowed formats: JPG, JPEG, PNG.</div>');
+
+      return false;
+    }
+
+    if ( file.size > maxsize )
+    {
+      noPreview();
+
+      $('#message').html('<div class=\"alert alert-danger\" role=\"alert\">The size of image you are attempting to upload is ' + (file.size/1024).toFixed(2) + ' KB, maximum size allowed is ' + (maxsize/1024).toFixed(2) + ' KB</div>');
+
+      return false;
+    }
+
+    $('#upload-button').removeAttr("disabled");
+
+    var reader = new FileReader();
+    reader.onload = selectImage;
+    reader.readAsDataURL(this.files[0]);
+
+  });
+    //# => id 
+    //. => class
+});
+        
+function search() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("input");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("posts");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    
+$('.tag').click(function(event){
+   var input, filter, ul, li, a, i;
+//    var found, checkFound;
+    target = event.target;
+    input = target.innerHTML;
+    filter = input.toUpperCase();
+    li = document.getElementsByClassName("tag");
+    console.log(li.length);
+    for (i = 0; i < li.length; i++) {
+        console.log(li[i].innerHTML);
+        if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            console.log("wow the same " + i)
+            li[i].closest("li").style.display = "inline";
+//            found.push(li[i]);
+            if(i < li.length){
+                var span1;
+                span1 = li[i].closest("span");
+                console.log("Current Span: " + span1);
+                console.log("Sibling of Span" + i + " :" + span1.nextElementSibling);
+                if(span1.nextElementSibling != null){
+                    while(span1.nextElementSibling.tagName.toLowerCase() == 'span'){
+                        span2 = li[i+1].closest("span");
+                        console.log("I got the sibling!! -> " + span2);
+                        if(span1.nextElementSibling == span2 ){
+                            console.log("SKIPPING");
+                            i++;
+                            span1 = span2;
+                        }
+                    }
+                }
+            }
+        } else {
+//            for(j = 0; j < found.length; j++){
+//                if(found[j].nextSibling)
+//            }
+            var begone = li[i].closest("li");
+            begone.style.display = "none";
+            
+            //li[i].style.display = "none";
+        }
+    }  
+});
+    
+    
+       
+function searchtag(tagName) {
+    var input, filter, ul, li, a, i;
+    input = tagName;
+    console.log(input);
+    filter = input.toUpperCase();
+   li = document.getElementsByClassName("tag");
+    console.log(li.length);
+    for (i = 0; i < li.length; i++) {
+        console.log(li[i].innerHTML);
+        if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            console.log("wow the same " + i)
+            li[i].closest("li").style.display = "inline";
+//            found.push(li[i]);
+            if(i < li.length){
+                var span1;
+                span1 = li[i].closest("span");
+                console.log("Current Span: " + span1);
+                console.log("Sibling of Span" + i + " :" + span1.nextElementSibling);
+                if(span1.nextElementSibling != null){
+                    while(span1.nextElementSibling.tagName.toLowerCase() == 'span'){
+                        span2 = li[i+1].closest("span");
+                        console.log("I got the sibling!! -> " + span2);
+                        if(span1.nextElementSibling == span2 ){
+                            console.log("SKIPPING");
+                            i++;
+                            span1 = span2;
+                        }
+                    }
+                }
+            }
+        } else {
+//            for(j = 0; j < found.length; j++){
+//                if(found[j].nextSibling)
+//            }
+            var begone = li[i].closest("li");
+            begone.style.display = "none";
+            
+            //li[i].style.display = "none";
+        }
+    } 
+}
+
+</script>
+
+</body>
+    
+
+</html>
